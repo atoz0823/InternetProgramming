@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- scheduleTable.html -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <style>
+      .class_1 { font-weight: bold; color:white; background-color:lightseagreen; }
+      .class_2 { font-weight: bold; color:white; background-color:lightcoral; }
+      .class_3 { font-weight: bold; color:white; background-color:royalblue; }
+      .class_4 { font-weight: bold; color:white; background-color:orange; }
+      .class_5 { font-weight: bold; color:white; background-color:goldenrod; }
+      .class_6 { font-weight: bold; color:white; background-color:mediumseagreen; }
+      .class_7 { font-weight: bold; color:white; background-color:plum; }
+      h1 {
+        text-align:center;
+      }
+      th, td {
+        text-align:center;
+        width:300px;
+        height:80px;
+      }
+      table, tr, th, td {
+        border:1px solid black;
+        border-collapse:collapse;
+      }
+    </style> <!-- border-collapse:collapse 단선으로, 반대는 separate -->
+    <title>HTML5 테이블 테스트 실습</title>
+  </head>
+  <body>
+    <h1>=2학년 1학기 시간표=</h1>
+    <table>
+      <thead>
+        <tr>
+          <th></th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td></td><td></td><td rowspan="2" class="class_1">영어 회화1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>2</td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>3</td><td rowspan="2" class="class_2">디지털 논리회로</td><td></td><td rowspan="2" class="class_3">자료구조 및 실습</td><td rowspan="2" class="class_3">자료구조 및 실습</td><td></td>
+        </tr>
+        <tr>
+          <td>4</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>5</td><td></td><td class="class_2">디지털 논리회로</td><td></td><td rowspan="2" class="class_4">인터넷 프로그래밍</td><td></td>
+        </tr>
+        <tr>
+          <td>6</td><td rowspan="4" class="class_5">C++ 프로그래밍</td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>7</td><td rowspan="3" class="class_6">유클리드 기하학</td><td></td><td rowspan="2" class="class_7">캠퍼스 멘토링</td><td></td>
+        </tr>
+        <tr>
+          <td>8</td><td rowspan="2" class="class_4">인터넷 프로그래밍</td><td></td>
+        </tr>
+        <tr>
+          <td>9</td><td></td><td></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
