@@ -1,0 +1,65 @@
+<!doctype html> <!-- /src/getAvg.html -->
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="../css/sample.css"/>
+    <script src="../js/sample.js"></script>
+    <title>웹 프로그래밍 실습</title>
+  </head>
+  <body>
+    <header>
+      <h2>실습 대환영</h2>
+    </header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://hive.dju.ac.kr">실습서버</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h4>가변 인자 함수 실습</h4>
+      <script>
+        function setStudentData(classnum, size) {
+          var array = new Array();
+          for (var i = 0; i < parseInt(size); i++) {
+            var score = prompt(classnum + "분반 " + parseInt(i+1) + "번 학생 점수 입력 : ", 0);
+            array.push(score);
+          }
+          return array;
+        }
+        
+        function getAvg(args) {
+          var sum = 0;
+          var result = 0;
+          for (var i = 0; i < args.length; i++) {
+            sum += args[i];
+          }
+          return sum;
+        }
+        
+        function printData() {
+          document.write("length = ", arguments.length, "<br/>");
+          for (var i = 0; i < arguments.length; i++) {
+            document.write("value = ", arguments[i], "<br/>");
+          }
+        }
+        
+        var data1 = setStudentData(01, 5);
+        var data2 = [1, 2, 3, 4, 5];
+        
+        printData(data1);
+        document.write("<br/>");
+        printData(data2);
+        document.write("<br/>");
+        document.write("01 분반의 평균 = ", getAvg(data1), "<br/>");
+        document.write("02 분반의 평균 = ", getAvg(data2), "<br/>");
+      </script>
+    </section>
+    <footer>
+      <p>&copy;20XX Made by Korea. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
