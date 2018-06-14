@@ -20,12 +20,5 @@ a:active {color:blue; background-color:transparent; text-decoration:none;}
 .class_5 {font-weight: bold; color:white; background-color:goldenrod;}
 .class_6 {font-weight: bold; color:white; background-color:mediumseagreen;}
 .class_7 {font-weight: bold; color:white; background-color:plum;}
-table {
-  width:60%;
-  margin:auto;
-}
-th, td {
-  text-align:center;
-  width:17%;
-  height:50px;
-}
+table {width:40%;}
+th, td {text-align:center; width:17%; height:50px;}
