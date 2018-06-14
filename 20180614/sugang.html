@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- sugang.html -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../20180614/CSS/sugang.css"/>
+    <script>
+      function event1onclick(){
+        document.getElementById("id_1").innerHTML="<b>공학설계</b> - 3학점<br/><b>수학1</b> - 3학점<br/><b>스포츠건강체력</b> - 1학점<br/><b>비전탐색</b> - 2학점<br/><b>글쓰기기초</b> - 2학점<br/><b>소프트웨어디자인</b> - 2학점<br/><b>현대사회와범죄</b> - 2학점<br/><b>프로그래밍기초및실습</b> - 3학점";
+      }
+      function event2onclick(){
+        document.getElementById("id_1").innerHTML="<b>비전설계</b> - 2학점<br/><b>수학2</b> - 3학점<br/><b>글쓰기심화</b> - 2학점<br/><b>글로벌시대의예절과인성</b> - 2학점<br/><b>영어강독</b> - 2학점<br/><b>대학생을위한창의적인사고</b> - 2학점<br/><b>프로그래밍응용및실습</b> - 3학점<br/><b>MOS(워드,엑세스)</b> - 2학점";
+      }
+      function event3onclick(){
+        document.getElementById("id_1").innerHTML="<b>인터넷프로그래밍</b> - 3학점<br/><b>캠퍼스멘토링</b> - 0학점<br/><b>디지털논리회로</b> - 2학점<br/><b>자료구조및실습</b> - 3학점<br/><b>C++프로그래밍</b> - 3학점<br/><b>유클리드기하학</b> - 3학점<br/><b>영어회화</b> - 2학점";
+      }
+    </script>
+    <title>수업 수강 내역</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2>수강중인 수업 내역</h2>
+    </header>
+    <nav class="link">
+      <ul>
+        <li class="link-li"><a href="e-Portfolio.html">포트폴리오</a></li>
+      </ul>
+    </nav>
+    <div class="row"></div>
+    <div id="main">
+      <nav class="col-3 col-m-3 menu">
+        <ul>
+          <li onclick="event1onclick()">1학년 1학기</li>
+          <li onclick="event2onclick()">1학년 2학기</li>
+          <li onclick="event3onclick()">2학년 1학기</li>
+        </ul>
+      </nav>
+      <section class="col-6 col-m-9">
+        <p id="id_1">학년과 학기를 선택하세요.</p>
+      </section>
+    </div>
+    <div class="row"></div>
+    <footer class="footer">
+      <h4>Copyright 2018 Korea.</h4>
+    </footer>
+  </body>
+</html>

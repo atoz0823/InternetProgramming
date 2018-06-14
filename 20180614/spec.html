@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!-- spec.html -->
+<html lang="ko">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="../20180614/CSS/spec.css"/>
+    <script>
+      function event1onclick(){
+        document.getElementById("id_1").innerHTML="공인 성적 및 자격증 정보 없음";
+      }
+      function event2onclick(){
+        document.getElementById("id_1").innerHTML="경력 정보 없음";
+      }
+      function event3onclick(){
+        document.getElementById("id_1").innerHTML="공모전 정보 없음";
+      }
+      function event4onclick(){
+        document.getElementById("id_1").innerHTML="동아리 정보 없음";
+      }
+      function event5onclick(){
+        document.getElementById("id_1").innerHTML="봉사 활동 정보 없음";
+      }
+    </script>
+    <title>스펙 정보</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2>스펙 정보</h2>
+    </header>
+    <nav class="link">
+      <ul>
+        <li class="link-li"><a href="e-Portfolio.html">포트폴리오</a></li>
+      </ul>
+    </nav>
+    <div class="row"></div>
+    <div id="main">
+      <nav class="col-3 col-m-3 menu">
+        <ul>
+          <li onclick="event1onclick()">공인 성적 및 자격증</li>
+          <li onclick="event2onclick()">경력</li>
+          <li onclick="event3onclick()">공모전</li>
+          <li onclick="event4onclick()">동아리</li>
+          <li onclick="event5onclick()">봉사 활동</li>
+        </ul>
+      </nav>
+      <section class="col-6 col-m-9">
+        <p id="id_1">항목을 선택하세요</p>
+      </section>
+    </div>
+    <div class="row"></div>
+    <footer class="footer">
+      <h4>Copyright 2018 Korea.</h4>
+    </footer>
+  </body>
+</html>
